@@ -1,0 +1,22 @@
+A Program to demonstrate how to get record from db by using find method:
+Programs:
+* Product.java
+* ProductDAO.java
+* ProductDAOImpl.java
+* ProductDetails.java
+* AppConfig.java
+* Test.java
+Note:
+* The find method is used to execute an HQL query, binding a number of values to "?" parameters in the query string.
+* The find(String queryString, Object... values) method accept two arguments first one is HQL query as String and second one is values as Object arg.
+* The above method return List object.
+Output:
+------ Product List By Product Id --------
+Product [productId=2, productCode=P002, productName=Pen, quantity=20, price=10.0]
+------ Product List By Product Name -------
+Product [productId=2, productCode=P002, productName=Pen, quantity=20, price=10.0]
+Product [productId=4, productCode=P004, productName=Pen, quantity=15, price=12.75]
+------ Product List By Product Code And Product Name --------
+Product [productId=4, productCode=P004, productName=Pen, quantity=15, price=12.75]
+------ Product Code And Name Object Array List by Product Id ------
+P004 Pen
